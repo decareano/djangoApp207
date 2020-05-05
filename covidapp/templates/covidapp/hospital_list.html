@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3> Pick on a date to view the data </h3>
+
+<div class="container">
+    <div class="row">
+      
+
+
+      {% for instance in object_list %}
+      <p><a class="btn btn-light" href='/covidapp/{{ instance.id }}'>{{ instance.date_time }}</a></p>
+      {% endfor %}
+      {% endblock %}
+      </div>
+    </div>
+    
+</div>
