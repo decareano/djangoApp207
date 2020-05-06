@@ -1,5 +1,4 @@
 """trydjango207 URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
 Examples:
@@ -30,7 +29,7 @@ urlpatterns = [
     #path('products/', include('products.urls')),
     #path('', home_view, name='home'),
     #path('contact/', contact_view),
-    path("", include('covidapp.urls')),
+    #path("", include('covidapp.urls')),
     #path('<int:id>/', product_detail_view, name='product-detail'),
     #path('product/', product_detail_view, name='product-detail'),
     #path('create/', product_create_view, name='product-create'),

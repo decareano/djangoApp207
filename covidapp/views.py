@@ -1,3 +1,6 @@
+from django.shortcuts import render
+
+# Create your views here.
 from django.http import Http404
 
 from django.shortcuts import render, get_object_or_404, redirect
@@ -90,7 +93,7 @@ def hospital_chart_view(request):
               'terms': [
                 'date_time',
                 'hospital_currently',
-                'ICU_currently', 
+                'icucurrently', 
                 'hospital_increase', 
                 'dead_daily',  
                 'tested_today']}
@@ -104,10 +107,10 @@ def hospital_chart_view(request):
                   'type': 'column',
                   'stacking': False},
                 'terms':{
-                  'daily': [
+                  'tested_today': [
                     'date_time',
                     'hospital_currently',
-                    'ICU_currently', 
+                    'icucurrently', 
                     'hospital_increase', 
                     'dead_daily',  
                     'tested_today']
@@ -121,5 +124,3 @@ def hospital_chart_view(request):
 
     #Step 3: Send the chart object to the template.
     return render(request, 'hospitalchart.html', {'chart_list': [cht]})
-
-

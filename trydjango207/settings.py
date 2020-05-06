@@ -14,13 +14,13 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-print(BASE_DIR)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'y6d$3o++vck^g2s!^lp5at*^uv1s(%g2#ugf107z#od1-5jq9n'
+SECRET_KEY = 'zzb7!!602fz+&zhk3m3ayujt!8l=d)povh1&@h)($la5cjy$j)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'covidapp',
     'bootstrap4',
     'chartit',
-    'covidapp.apps.CovidappConfig',
     
 ]
 

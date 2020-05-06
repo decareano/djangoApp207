@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 
 
-from covidapp.views import hospital_create_view, hospital_detail_view, hospital_list_view, hospital_index_view
+from covidapp.views import hospital_create_view, hospital_detail_view, hospital_list_view, hospital_index_view, hospital_chart_view
 from covidapp import views
 
 app_name = 'covidapp'
@@ -21,5 +21,4 @@ urlpatterns = [
     # path('initial', render_initial_data),
     # #path('<int:id>/', dynamic_lookup_view, name='product-detail'),
     # path('<int:id>/delete/', product_delete_view, name='product-delete'),
-   
 ]
