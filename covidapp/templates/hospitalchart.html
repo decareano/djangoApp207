@@ -8,12 +8,11 @@
     crossorigin="anonymous"></script>
      <!-- highcharts CDN -->
     <script src="https://code.highcharts.com/highcharts.src.js"></script>
-
+   
     {% load chartit %}
     {{ chart_list|load_charts:"cht" }}
 </head>
 <body>
-    <div id='cht'>  </div>
- 
+    <div id="cht"></div>
 </body>
 </html>

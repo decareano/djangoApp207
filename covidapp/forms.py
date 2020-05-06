@@ -18,7 +18,7 @@ class HospitalForm(forms.ModelForm):
 						# 		  	}
 						# 	)
 						# )
-	ICUcurrently   			= forms.CharField()
+	icucurrently   			= forms.CharField()
 	hospitalIncrease       	= forms.CharField()
 	deadDaily				= forms.CharField()
 	testedToday				= forms.CharField()
@@ -28,7 +28,7 @@ class HospitalForm(forms.ModelForm):
 		fields = [
 			'date_time',
 			'hospitalCurrently',
-			'ICUcurrently',
+			'icucurrently',
 			'hospitalIncrease',
 			'deadDaily',
 			'testedToday',
