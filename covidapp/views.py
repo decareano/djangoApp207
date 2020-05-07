@@ -92,7 +92,7 @@ def hospital_chart_view(request):
                'source': Hospital.objects.all()},
               'terms': [
                 'date_time',
-                'hospital_currently']}
+                'tested_today']}
              ])
 
     #Step 2: Create the Chart object
@@ -105,7 +105,7 @@ def hospital_chart_view(request):
                 'terms':{
                   'date_time': [
                     
-                    'hospital_currently']
+                    'tested_today']
                     
                     
                      
