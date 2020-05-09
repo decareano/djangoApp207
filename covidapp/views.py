@@ -85,22 +85,23 @@ def hospital_index_view(request):
 
 def hospital_chart_view(request):
     #Step 1: Create a DataPool with the data we want to retrieve.
+    #Step 1: Create a DataPool with the data we want to retrieve.
     hospitaldata = \
         DataPool(
            series=
             [{'options': {
-               'source': Hospital.objects.all()},
-              'terms': [
-                'date_time',
-                'tested_today']}
+              'source': Hospital.objects.all()},
+              'terms': [{'date_time': 'date_time', 'tested_today': 'tested_today'}]
+               }
              ])
+
 
     #Step 2: Create the Chart object
     cht = Chart(
             datasource = hospitaldata,
             series_options =
               [{'options':{
-                  'type': 'bar',
+                  'type': 'column',
                   'stacking': False},
                 'terms':{
                   'date_time': [
