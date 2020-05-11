@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'covidapp',
     'bootstrap4',
     'chartit',
+    'import_export',
     
 ]
 
