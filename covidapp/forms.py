@@ -5,7 +5,7 @@ from .models import Hospital
 
 class HospitalForm(forms.ModelForm):
 	date_time   			= forms.DateField(initial=datetime.date.today)
-	hospitalCurrently 		= forms.CharField()
+	hospital_currently 		= forms.IntegerField(required=False)
 						# 			required=False, 
 						# 			widget=forms.Textarea(
 						# 		  	attrs={
@@ -18,18 +18,18 @@ class HospitalForm(forms.ModelForm):
 						# 		  	}
 						# 	)
 						# )
-	icucurrently   			= forms.CharField()
-	hospitalIncrease       	= forms.CharField()
-	deadDaily				= forms.CharField()
-	testedToday				= forms.CharField()
+	icucurrently   			= forms.IntegerField(required=False)
+	hospital_increase       = forms.IntegerField(required=False)
+	dead_daily				= forms.IntegerField(required=False)
+	tested_today			= forms.IntegerField(required=False)
 
 	class Meta:
 		model = Hospital
 		fields = [
 			'date_time',
-			'hospitalCurrently',
+			'hospital_currently',
 			'icucurrently',
-			'hospitalIncrease',
-			'deadDaily',
-			'testedToday',
+			'hospital_increase',
+			'dead_daily',
+			'tested_today',
 		]
