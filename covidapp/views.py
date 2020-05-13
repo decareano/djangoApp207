@@ -118,6 +118,8 @@ def hospital_chart_view(request):
                'xAxis': {
                     'title': {
                        'text': 'days selected'}}})
+	
+
 
     #Step 3: Send the chart object to the template.
     return render(request, 'hospitalchart.html', {'chart_list': [cht]})
